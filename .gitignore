@@ -1,0 +1,9 @@
+# Dataset "Peruvian Banknotes" (~915 MB): se descarga de Mendeley, ver README
+training_set/
+validation_set/
+testing_set/
+
+# Archivos temporales
+*.zip
+.DS_Store
+Thumbs.db
