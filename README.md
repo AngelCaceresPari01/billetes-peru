@@ -33,6 +33,7 @@ Versión 1: reconoce billetes de S/ 10, 20, 50 y 100 (series antigua y nueva). A
 ## Estructura del repositorio
 
 ```
+apk/                           APK instalable para Android (v1.0)
 billetes_app/                  App Flutter (Android e iOS) — ver billetes_app/README.md
 entrenamiento_billetes.ipynb   Notebook de Google Colab: descarga el dataset, entrena, evalúa y exporta el modelo
 modelo_v1/                     soles.tflite, labels.txt, curvas y matrices de confusión
@@ -41,7 +42,7 @@ articulo_ieee/                 Artículo en formato IEEE (LaTeX + PDF)
 
 ## Cómo usarlo
 
-- **Instalar en Android:** descarga el APK desde [Releases](../../releases) (`app-arm64-v8a-release.apk` sirve para casi todos los celulares actuales).
+- **Instalar en Android:** descarga [`apk/BilletesPeru-v1.0-arm64.apk`](apk/BilletesPeru-v1.0-arm64.apk) (botón «Download raw file») en tu celular y ábrelo; Android pedirá permitir apps de origen desconocido. Sirve para casi todos los celulares actuales (ARM64).
 - **Compilar la app:** con Flutter 3.44+, dentro de `billetes_app/` ejecuta `flutter run`.
 - **Reentrenar el modelo:** abre `entrenamiento_billetes.ipynb` en Google Colab con GPU y ejecuta todas las celdas. Luego copia `soles.tflite` y `labels.txt` a `billetes_app/assets/modelo/`.
 
